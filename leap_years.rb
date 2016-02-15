@@ -11,12 +11,12 @@ def leap_year?(year)
   end
 end
 
-# def leap_years(start, finish)
-#   years = []
-#   (start..finish).each do year
-#     if leap_year? year
-#       years << year
-#     end
-#   end
-#   years
-# end
+def leap_years(start, finish)
+  years = []
+  (start..finish).each do |year|
+    if leap_year? year
+      years << year
+    end
+  end
+  years
+end

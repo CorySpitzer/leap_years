@@ -33,8 +33,12 @@ describe '#leap_year?' do
   end
 end
 
-# describe '#leap_years' do
-#   it 'identifies 2016 as a leap year' do
-#     leap_years(2015, 2017).should eq [2016]
-#   end
-# end
+describe '#leap_years' do
+  it 'identifies 2016 as a leap year' do
+    expect(leap_years(2015, 2017)).to eq [2016]
+  end
+
+  it 'identifies many leap years correctly' do
+    expect(leap_years(2000, 2016)).to eq [2000, 2004, 2008, 2012, 2016]
+  end
+end
