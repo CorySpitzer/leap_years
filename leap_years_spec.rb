@@ -27,6 +27,10 @@ describe '#leap_year?' do
   it 'identifies a multiple of 100 as not a leap year' do
     expect(leap_year?(2100)).to eq false
   end
+
+  it 'identifies a multiple of 400 as a leap year' do
+    expect(leap_year?(2400)).to eq true
+  end
 end
 
 # describe '#leap_years' do
